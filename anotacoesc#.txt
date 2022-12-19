@@ -1,0 +1,353 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        //  static void Main(string[] args)
+
+        /*  {   variaveis
+              Int -  156 como 32334
+              Float - 15.6 como 235.54 - colocar um f no final para numeros decimais
+             Bool - true ou false
+              String - "palavra"
+              Char - 'a'
+              A-Z 
+              não pode iniciar com numero 0 -9 
+              _
+              palavras reservadas do cSharp
+
+             int segundaFeira = 2;
+             string corFavorita = "Azul";
+              float km = 294.48f;
+             bool nomeSujo = false;
+              Console.WriteLine(km);
+             Console.WriteLine(segundaFeira);
+             Console.WriteLine(corFavorita);
+             Console.WriteLine(nomeSujo);
+              */
+
+
+        /* Alterar uma variavel
+
+          km = 123.456f;
+          corFavorita = "Roxo";
+          Console.WriteLine(km);
+           Console.WriteLine(corFavorita);
+          Console.ReadLine();
+
+        É uma forma de declarar uma variavel, sem colocar o tipo
+        var carro1 = "Gol";
+       var modeloDoProduto = 2322;
+        */
+
+        /* Pode armazernar variaveis de vários tipos (tipado)
+        dynamic corFavorita = "Roxo";
+        Console.WriteLine(corFavorita);
+        corFavorita = 123456;
+        Console.WriteLine(corFavorita);
+       */
+
+        // constantes = não se altera
+        /*const float PI = 3.14f;
+
+        Console.WriteLine(PI);
+        */
+
+
+        /* Console.WriteLine("Escreva seu nome: ");
+         //captura o valor e passa para uma variavel
+         string nome = Console.ReadLine();
+         Console.WriteLine("Seu nome é:");
+         Console.WriteLine(nome);
+         Console.ReadLine();
+        */
+
+        //int numeroaleatório = 10 * 4 / 8;
+        /*uando se divide 2 numeros inteiros, o resultado sempre será um valor inteiro
+        exemplo  int num = 5/2; => 2.
+        - ou float + int ou int + float  = o resultado sempre será float.
+        - x ou / tem prioridade, pra mudar a ordem usar os () 
+        */
+        /* float numerodiv = 5f/2;
+         Console.WriteLine(numerodiv);
+         Console.WriteLine(numeroaleatório);
+         Console.ReadLine();
+        */
+
+
+
+        /*int a = 6;
+        int b = 10;
+        int c = 10;
+
+        // (E ou AND) && e || (OU/OR)
+        //EXEMPLO:  Para ter entrada gratuita: 
+        // SerMulher && idade >=25 -> Se tiver as 2 condiçoes entra na festa de graça.
+        true && true = true
+         false && false = false
+         false && true = false
+        true && false = false
+        */
+        /* 1kmdealimento(v) || levarumbrinuedo(F) = true
+         true && true = true
+         false && false = false
+         false && true = true
+        true && false = true */
+
+        /*if (a > b || a < c ) // Se
+        {
+            Console.WriteLine("é verdade");
+          } else if ( c != b )
+        {
+            Console.WriteLine("Executou Elseif ");
+        }
+
+        else //se não
+        {
+            Console.WriteLine("é mentira");
+        }
+
+        Console.ReadLine();*/
+
+
+        /*verificar idade
+        Console.WriteLine("Qual é sua idade?");
+        int idade = int.Parse(Console.ReadLine());
+
+
+        if (idade >= 0 && idade <= 11)
+        {
+            Console.WriteLine("Voce é uma criança");
+
+        }
+        else if (idade >= 12 && idade <= 17)
+        {
+            Console.WriteLine("Voce é um adolescente");
+        }
+        else if (idade >= 18 && idade <= 60)
+        {
+            Console.WriteLine("Voce é um adulto");
+        }
+        else 
+        {
+            Console.WriteLine("Voce é um idoso");
+        }*/
+
+
+        /* função
+        GerarPreco(60);
+        GerarPreco(300);
+        GerarPreco(-100);
+        exibirMsg();
+
+        string valor = Console.ReadLine();
+        Console.WriteLine(Math.Abs(-6));
+        Console.ReadLine();*/
+        // }
+        /*static void exibirMsg()
+        {
+            Console.WriteLine("Esse sistema é show de bola!");
+            Console.WriteLine("Estou usando funçoes");
+
+        }*/
+
+        /* static void GerarPreco(int preco)
+     {
+        /*o abs serve para coverter o numero negativo em positivo
+         int precoAbs = Math.Abs(preco); 
+         int valorFinal = precoAbs + (2 * precoAbs);
+         Console.WriteLine("Valor final: " + valorFinal);
+     }*/
+
+
+        /*int soma1 = Somar(1, 2, 3);
+        int soma2 = Somar(10, 20, 30);
+        int soma3 = Somar(100, 200, 300);
+        Console.WriteLine(soma1);
+        Console.WriteLine(soma2);
+        Console.WriteLine(soma3);
+
+        Console.ReadLine();
+
+    }
+
+        static int Somar(int a, int b, int c)
+        {
+            int resultadoFinal = a + b / c;
+            return resultadoFinal;
+
+       } */
+
+
+        /*float nota1 = Nota(6, 4, 0.4f);
+        float nota2 = Nota(8, 6, 0.6f);
+
+        Console.WriteLine(nota1);
+        Console.WriteLine(nota2);
+        Console.ReadLine();
+    }
+
+        static float Nota(float a, float b, float c)
+        {
+            float resultadoFinal = a * (b / c);
+            return resultadoFinal;*/
+
+        /*Arrays
+
+        string[] produtos = new string[6] { "Arroz", "feijão", "Macarrão", "Carne", "Farofa", "Salada"};
+        produtos[2] = "Frango";
+        Console.WriteLine(produtos[2]);
+        Console.ReadLine();
+
+        maneira simples de criar uma array 
+        int[] valores = { 40, 50, 100,80, 54 };
+        */
+
+
+        /*Ao contrario de else e if, com switch só dá pra comparar;
+        string cor = Console.ReadLine();
+        switch (cor)
+        {
+            case "Vermelho":
+                Console.WriteLine("Sua cor favorita é vermelho");
+                break;
+            case "Amarelo":
+                Console.WriteLine("Sua cor favorita é Amarelo");
+                break;
+            case "Azul":
+                Console.WriteLine("Sua cor favorita é Azul");
+                break;
+            default:
+                Console.WriteLine("Cor invalida!!");
+                break;
+
+
+    }*/
+        //muitos utilizados com switch para criar menus
+        /* enum Cor { Azul, Verde, Amarelo, Vermelho }
+         static void Main(string[] args) {
+             Cor corFavorita = Cor.Vermelho;
+             Cor corFavoritaDaCarla = Cor.Verde;
+             Console.WriteLine(corFavoritaDaCarla);
+             Console.WriteLine((int)corFavorita); //- o int converte a cor para o numero
+             Console.WriteLine((Cor)2); // - Converteu o numero para cor
+             Console.ReadLine();*/
+
+
+
+
+        /*Switch com enum
+        enum Opcao {Criar = 1, Deletar, Editar, Listar, Atualizar}
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Selecione uma das opçoes abaixo");
+            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+            int index = int.Parse(Console.ReadLine());
+           Opcao OpcaoSelecionada = (Opcao)index; // pegou a escolha(index) do usuario e converteu para enum
+           Console.WriteLine(OpcaoSelecionada);
+
+            switch(OpcaoSelecionada)
+            {
+                case Opcao.Criar: Console.WriteLine("Criar algo");
+                    break;
+                case Opcao.Deletar:Console.WriteLine("Deletar");
+                    break;
+                case Opcao.Editar:
+                    Console.WriteLine("Editar algo");
+                    break;
+                case Opcao.Listar:
+                    Console.WriteLine("Listar algo");
+                    break;
+                case Opcao.Atualizar:
+                    Console.WriteLine("Atualizando...");
+                    break;
+                default:
+                    Console.WriteLine("Opção invalida!!");
+                    break;
+            }
+            Console.ReadLine();*/
+
+
+        //Estruturas de repetição
+
+        /* While repete varias vezes
+         static void Main(string[] args)
+         {
+             int contador = 0;
+             while (contador <= 20)// Enquanto for verdade faça:
+             {
+                 Console.WriteLine(contador);
+                 Console.WriteLine("While!");
+                 //contador = contador + 1; // 1 forma de fazer
+                 // contador += 1; // 2 forma de fazer a mesma função de cima.
+                 contador++; // 3 forma de fazer a mesma função.
+             }
+             //  Console.WriteLine("Fim do while");
+             // Console.ReadLine(); */
+
+
+
+
+        /*  Do While (Semelhante ao while) diferença: mesmo que seja falsa, o código será executado
+        int contador2 = 0;
+
+        do {
+            Console.WriteLine("do While");
+            contador2++;
+
+        } while (contador2 < 15);
+        Console.WriteLine("Fim do while");
+        Console.ReadLine();
+    } */
+
+
+
+        //foreach
+        /*static void Main(string[] args)
+        {
+            string[] nomes = {"Laura", "Larissa", "Miguel"};
+            foreach(string nome in nomes) // Para cada nome no array nomes, repita o bloco de código 
+            {
+                Console.WriteLine(nome);
+                
+            }
+            Console.ReadLine();
+        }*/
+
+
+        /* FOR = dá pra reduzir o código do while com o for
+        static void Main(string[] args)
+        {
+            for (int contador = 0; contador < 10; contador++)
+            {
+                Console.WriteLine("For rodando");
+            }
+
+            for (int contador2 = 7; contador2 >= 0; contador2--)
+            {
+                Console.WriteLine(contador2);
+            }
+            Console.ReadLine();
+
+
+
+        }*/
+
+        /*escopo local é mais restrito 
+        //+ uando se cria uma variavel dentro de uma função, ela fica presa dentro dela.
+        // escopo global pode ser acessada em ualuer função.
+        static void Main(string[] args)
+        {
+            string meuNome = "Laura";
+            Console.WriteLine(meuNome);
+            Console.ReadLine();
+        }*/
+
+    }
+}
